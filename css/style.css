@@ -63,7 +63,7 @@ body .main .container header .nav ul.default-nav {
   display: none;
 }
 body .main .container header .nav ul.default-nav li {
-  margin-left: 7px;
+  margin-left: 0px;
 }
 body .main .container header .nav ul.default-nav li a {
   opacity: 0.6;
@@ -82,7 +82,7 @@ body .main .container header .nav ul.default-nav li a:hover {
 body .main .container header .nav ul.default-nav li:last-child a {
   border: 2px solid #cbcbcb;
   border-radius: 3px;
-  padding: 6px 25px 4px 25px;
+  padding: 6px 20px 4px 20px;
   display: inline-block;
 }
 body .main .container header .nav .mobile-menu .hamburger {
@@ -206,7 +206,8 @@ body .cat,
 body .gallery,
 body .stat,
 body .feature,
-body .global-cat {
+body .global-cat,
+body .partners {
   padding: 90px 0 90px 0;
 }
 body .cat {
@@ -269,7 +270,7 @@ body .stat .row .counter {
   text-align: center;
 }
 body .stat .row .counter h1 {
-  font-size: 7.143em;
+  font-size: 6em;
   font-weight: lighter;
   color: #000;
   letter-spacing: 5px;
@@ -383,12 +384,42 @@ body .global-cat .row .services .panel .panel-body .more a {
   padding: 3px 20px 1px 20px;
   letter-spacing: 1px;
 }
+body .partners {
+  text-align: center;
+}
+body .partners .row h4 {
+  font-size: 1.071em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+body .partners .row p {
+  margin-top: 40px;
+  text-align: justify;
+  line-height: 2.5em;
+  font-weight: lighter;
+}
+body .partners .row .logo {
+  padding: 40px 0 0 0;
+}
+body .partners .row .logo [class*='col-'] {
+  text-align: center;
+  padding-bottom: 30px;
+}
+body .partners .row .logo [class*='col-'] img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  display: inline-block;
+}
 body footer {
-  padding: 25px 0 22px 0;
+  padding: 26px 0 22px 0;
   text-align: center;
   font-weight: lighter;
   font-size: 0.857em;
   letter-spacing: 1px;
+  background: #f2f2f2;
+}
+body footer a {
+  color: #333;
 }
 body .container-fluid > .row {
   margin-left: 0px;
@@ -466,11 +497,20 @@ body .col-center {
     padding-left: 15px;
     padding-right: 15px;
   }
+  body .partners .row .logo [class*='col-'].bbc-pads {
+    padding-top: 35px;
+  }
+  body .partners .row .logo [class*='col-'].marin-pads {
+    padding-top: 37px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   body .main .container header .nav ul.default-nav li {
     margin-left: 25px;
+  }
+  body .main .container header .nav ul.default-nav li:last-child a {
+    padding: 6px 25px 4px 25px;
   }
   body .stat {
     padding-left: 0px;
