@@ -129,13 +129,12 @@ body {
 					}
 				}
 			}
-			
+						
 			// splash
 			.splash {
 				position: relative;
 				text-align: center;
 				height: 500px;
-				display: none;
 				
 				// tag
 				.tag {
@@ -143,15 +142,16 @@ body {
 					position: absolute;
 					left: 0;
 					right: 0;
-					top:13%;
+					top: -20px;
 					margin: 0 auto;
 					
 					// styling
 					h1 {
 						font-weight: lighter;
 						letter-spacing: 2px;
+						font-size: 25px;
+						line-height: 1.3em;
 						strong {
-							font-weight: normal;
 						}
 					}
 				}
@@ -166,17 +166,17 @@ body {
 					margin: 0 auto;
 				}
 				.bg-1 {
-					background: url('../img/bg-graph-a.png');
+					background: url('../img/splash/bg-graph-a.png');
 					width: 337px;
 					height: 184px;
 				}
 				.bg-2 {
-					background: url('../img/bg-graph-b.png');
+					background: url('../img/splash/bg-graph-b.png');
 					width: 547px;
 					height: 274px;
 				}
 				.bg-3 {
-					background: url('../img/bg-graph-c.png');
+					background: url('../img/splash/bg-graph-c.png');
 					width: 776px;
 					height: 378px;
 				}
@@ -246,7 +246,7 @@ body {
 			
 			// left
 			.left {
-				background: url("../img/bg-springfield.gif") no-repeat;
+				background: url("../img/content/bg-springfield.gif") no-repeat;
 				background-size: cover;
 				
 				// hue
@@ -257,7 +257,7 @@ body {
 			
 			// right
 			.right {
-				background: url("../img/bg-multiscreen.gif") no-repeat;
+				background: url("../img/content/bg-multiscreen.gif") no-repeat;
 				background-size: cover;
 				
 				// hue
@@ -391,6 +391,7 @@ body {
 					color: #000;
 					letter-spacing: 5px;
 					margin-bottom: 0px;
+					text-align: center;
 				}
 				p {
 					font-size: 0.74em;
@@ -398,6 +399,7 @@ body {
 					letter-spacing: 1px;
 					margin-top:-10px;
 					font-weight: lighter;
+					text-align: center;
 				}
 			}
 		}
@@ -564,18 +566,21 @@ body {
 			}
 			
 			// logo
-			.logo {
+			&.logo {
 				padding: 40px 0 0 0;
 				
 				// col
 				[class*='col-'] {
 					text-align: center;
-					padding-bottom:30px;
+					padding-bottom:0px;
 					
 					// img
 					img {
 						.opacity(0.4);
 						display: inline-block;
+						max-width: 200px;
+						margin-right: 20px;
+						margin-bottom: 20px;
 					}
 				}
 			}
@@ -671,6 +676,16 @@ body {
 				// splash
 				.splash {
 					display: block;
+					
+					// tag
+					.tag {
+						top: 13%;
+						
+						// text
+						h1 {
+							font-size: 35px;
+						}
+					}
 				}
 			}
 		}
@@ -752,6 +767,10 @@ body {
 				// counter
 				.counter {
 					text-align: left;
+					
+					h1 {
+						font-size: 5em;
+					}
 				}
 			}
 			
@@ -761,6 +780,7 @@ body {
 				padding-right: 15px;
 			}
 		}
+		
 		
 		// partnets
 		.partners {
@@ -834,7 +854,7 @@ body {
 				.counter {
 					
 					h1 {
-						font-size: 6em;
+						font-size: 5em;
 					}
 				}
 			}

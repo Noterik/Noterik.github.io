@@ -96,7 +96,6 @@ body .main .container .splash {
   position: relative;
   text-align: center;
   height: 500px;
-  display: none;
 }
 body .main .container .splash .tag {
   opacity: 0;
@@ -104,15 +103,14 @@ body .main .container .splash .tag {
   position: absolute;
   left: 0;
   right: 0;
-  top: 13%;
+  top: -20px;
   margin: 0 auto;
 }
 body .main .container .splash .tag h1 {
   font-weight: lighter;
   letter-spacing: 2px;
-}
-body .main .container .splash .tag h1 strong {
-  font-weight: normal;
+  font-size: 25px;
+  line-height: 1.3em;
 }
 body .main .container .splash .bg-1,
 body .main .container .splash .bg-2,
@@ -127,17 +125,17 @@ body .main .container .splash .img-splash {
   margin: 0 auto;
 }
 body .main .container .splash .bg-1 {
-  background: url('../img/bg-graph-a.png');
+  background: url('../img/splash/bg-graph-a.png');
   width: 337px;
   height: 184px;
 }
 body .main .container .splash .bg-2 {
-  background: url('../img/bg-graph-b.png');
+  background: url('../img/splash/bg-graph-b.png');
   width: 547px;
   height: 274px;
 }
 body .main .container .splash .bg-3 {
-  background: url('../img/bg-graph-c.png');
+  background: url('../img/splash/bg-graph-c.png');
   width: 776px;
   height: 378px;
 }
@@ -189,14 +187,14 @@ body .selection.container-fluid .row .right .hue .text p {
   margin: 25px 0 27px 0;
 }
 body .selection.container-fluid .left {
-  background: url("../img/bg-springfield.gif") no-repeat;
+  background: url("../img/content/bg-springfield.gif") no-repeat;
   background-size: cover;
 }
 body .selection.container-fluid .left .hue {
   background: rgba(255, 167, 24, 0.6);
 }
 body .selection.container-fluid .right {
-  background: url("../img/bg-multiscreen.gif") no-repeat;
+  background: url("../img/content/bg-multiscreen.gif") no-repeat;
   background-size: cover;
 }
 body .selection.container-fluid .right .hue {
@@ -275,6 +273,7 @@ body .stat .row .counter h1 {
   color: #000;
   letter-spacing: 5px;
   margin-bottom: 0px;
+  text-align: center;
 }
 body .stat .row .counter p {
   font-size: 0.74em;
@@ -282,6 +281,7 @@ body .stat .row .counter p {
   letter-spacing: 1px;
   margin-top: -10px;
   font-weight: lighter;
+  text-align: center;
 }
 body .feature {
   background: #f2f2f2;
@@ -398,17 +398,20 @@ body .partners .row p {
   line-height: 2.5em;
   font-weight: lighter;
 }
-body .partners .row .logo {
+body .partners .row.logo {
   padding: 40px 0 0 0;
 }
-body .partners .row .logo [class*='col-'] {
+body .partners .row.logo [class*='col-'] {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
-body .partners .row .logo [class*='col-'] img {
+body .partners .row.logo [class*='col-'] img {
   opacity: 0.4;
   filter: alpha(opacity=40);
   display: inline-block;
+  max-width: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 body footer {
   padding: 26px 0 22px 0;
@@ -463,6 +466,12 @@ body .col-center {
   body .main .container .splash {
     display: block;
   }
+  body .main .container .splash .tag {
+    top: 13%;
+  }
+  body .main .container .splash .tag h1 {
+    font-size: 35px;
+  }
   body .gallery .row .carousel .carousel-inner .item .carousel-caption {
     position: absolute;
     bottom: 0px;
@@ -493,6 +502,9 @@ body .col-center {
   body .stat .row .counter {
     text-align: left;
   }
+  body .stat .row .counter h1 {
+    font-size: 5em;
+  }
   body .stat .col-center {
     padding-left: 15px;
     padding-right: 15px;
@@ -517,7 +529,7 @@ body .col-center {
     padding-right: 0px;
   }
   body .stat .row .counter h1 {
-    font-size: 6em;
+    font-size: 5em;
   }
   body .selection.container-fluid .row .left .hue .text,
   body .selection.container-fluid .row .right .hue .text {

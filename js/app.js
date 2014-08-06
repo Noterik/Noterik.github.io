@@ -8,6 +8,11 @@
             minusSection: 'header'
         });
         
+        // nav
+		$('.small-splash').fullpageSplash({
+            minusSection: 'header'
+        });
+        
         // get json github stat
         getGithubStats();
         
@@ -27,18 +32,31 @@
 	// load splash fn
 	var loadSplash = function(){
 		
-		// show bgs one by one
-		$('.bg-1').animate({ opacity : 1}, 1000, function(){
-			$('.bg-2').animate({ opacity : 1}, 1000, function(){
-				$('.bg-3').animate({ opacity : 1}, 1000, function(){
-					$('.img-splash').animate({ opacity : 1}, 1000, function(){
-					
-						// show tag
-						$('.tag').animate({ opacity: 1 }, 500);
+		// check width
+		if($(window).width() <= 768) {
+			
+			// show tag	
+			$('.img-splash').animate({ opacity : 1}, 1000, function(){
+						
+				// show tag
+				$('.tag').animate({ opacity: 1 }, 500);
+			});
+		}
+		else {
+			
+			// show bgs one by one
+			$('.bg-1').animate({ opacity : 1}, 1000, function(){
+				$('.bg-2').animate({ opacity : 1}, 1000, function(){
+					$('.bg-3').animate({ opacity : 1}, 1000, function(){
+						$('.img-splash').animate({ opacity : 1}, 1000, function(){
+						
+							// show tag
+							$('.tag').animate({ opacity: 1 }, 500);
+						});
 					});
 				});
-			});
-		});	
+			});	
+		}
 	};
 	
 	// get github stat
