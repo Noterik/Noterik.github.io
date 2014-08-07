@@ -12,13 +12,25 @@
 // defaults
 a {
 	.transition (color 0.35s);
+	
 	&:hover, &:active, &:focus, &:visited {
 		text-decoration: none;
 		outline: 0;
+		color: @grey-color;
 	}
 }
 h1 {
 	letter-spacing: 1px;
+}
+p {
+	a {
+		color: @grey-color;
+		border-bottom: 1px dotted @grey-color;
+		
+		&:hover, &:active, &:focus, &:visited {
+			color: @grey-color;
+		}
+	}
 }
 
 // body
@@ -206,7 +218,7 @@ body {
 			
 				// left & right
 				.left, .right {
-					height: 450px;
+					height: 500px; // 450
 					position: relative;
 					padding-left: 0px;
 					padding-right: 0px;
@@ -224,7 +236,7 @@ body {
 							width: 85%;
 							margin: 0 auto;
 							text-align: left;
-							padding:76px 0 0 0;
+							padding:30px 0 0 0; // 76px 0 0 0
 							display: block;
 							
 							// header
@@ -238,33 +250,47 @@ body {
 							p {
 								letter-spacing: 0.03em;
 								margin:25px 0 27px 0;
+								
+								a {
+									color: #fff;
+									border-bottom: 1px dotted #fff;
+								}
 							}
+						}
+					}
+				}
+				
+				// left
+				.left {
+					background: url("../img/content/bg-springfield.gif") no-repeat;
+					background-size: cover;
+					
+					// hue
+					.hue {
+						background: rgba(255,167,24,0.6);
+						
+						
+					}
+				}
+				
+				// right
+				.right {
+					background: url("../img/content/bg-multiscreen.gif") no-repeat;
+					background-size: cover;
+					
+					// hue
+					.hue {
+						background: rgba(38, 168, 221, 0.6);
+						
+						// text
+						.text {
+							padding: 80px 0 0 0;
 						}
 					}
 				}
 			}
 			
-			// left
-			.left {
-				background: url("../img/content/bg-springfield.gif") no-repeat;
-				background-size: cover;
-				
-				// hue
-				.hue {
-					background: rgba(255,167,24,0.6);
-				}
-			}
 			
-			// right
-			.right {
-				background: url("../img/content/bg-multiscreen.gif") no-repeat;
-				background-size: cover;
-				
-				// hue
-				.hue {
-					background: rgba(38, 168, 221, 0.6);
-				}
-			}
 		}
 	}
 	
@@ -487,12 +513,13 @@ body {
 					border-left: 0px;
 					border-right: 0px;
 					border-radius: 0px;
+					margin-bottom: 25px;
 					
 					// header
 					.panel-heading {
 						padding: 0px;
 						border-radius: 0px;
-						padding-top:20px;
+						padding-top:25px;
 						
 						// textual
 						a {
@@ -501,7 +528,7 @@ body {
 						.info {
 							display: block;
 							font-size: 0.586em;
-							color: @lightgrey-color;
+							color: @grey-color;
 							letter-spacing: 1px;
 							margin-top:7px;
 						}
@@ -529,7 +556,7 @@ body {
 						// more
 						.more {
 							a {
-								margin-top:15px;
+								margin-top:20px;
 								display: table;
 								color: #fff;
 								font-size: 0.893em;
@@ -611,6 +638,19 @@ body {
 		}
 	}
 	
+	// nav
+	.repository-nav {
+		color: #fff;
+		background: #333;
+		display: table;
+		font-size: 1.143em;
+		padding: 10px 30px 9px 30px;
+		margin: 0 auto;
+		letter-spacing: 1.5px;
+		font-weight: lighter;
+		margin-top:40px;
+	}
+	
 	// btn
 	.btn {
 		color: #fff;
@@ -618,6 +658,7 @@ body {
 		padding: 10px 30px 10px 30px;
 		display: inline-block;
 		border-radius: 0px;
+		border-bottom: 0px !important;
 		
 		// btn
 		&.btn-yellow {
@@ -745,12 +786,39 @@ body {
 					// left & right
 					.left, .right {
 						
+						
 						// hue
 						.hue {
 							
 							// text
 							.text {
 								width: 70%;
+							}
+						}
+					}
+					
+					// eft
+					.left {
+						
+						// hue
+						.hue {
+							
+							// text
+							.text {
+								padding: 30px 0 0;
+							}
+						}
+					}
+					
+					// eft
+					.right {
+						
+						// hue
+						.hue {
+							
+							// text
+							.text {
+								padding: 80px 0 0;
 							}
 						}
 					}
@@ -871,13 +939,27 @@ body {
 				
 					// left & right
 					.left, .right {
+						height: 450px;
 						
 						// hue
 						.hue {
 							
 							// text
 							.text {
-								padding: 124px 0 0 0;
+								padding: 110px 0 0 0;
+							}
+						}
+					}
+					
+					// left
+					.left {
+						
+						// hue
+						.hue {
+							
+							// text
+							.text {
+								padding: 88px 0 0 0;
 							}
 						}
 					}
