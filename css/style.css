@@ -386,9 +386,7 @@ body .global-cat .row .services .panel .panel-heading h4 {
   width: 100%;
 }
 body .global-cat .row .services .panel .panel-heading i {
-  font-size: 0.7em;
-  margin-top: 14px;
-  display: none;
+  margin-top: 16px;
 }
 body .global-cat .row .services .panel .panel-body {
   padding: 20px 0 0 0;
@@ -483,6 +481,12 @@ body .col-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+body .icono {
+  background: url("../img/sprite.png") -173px 0px;
+  width: 16px;
+  height: 9px;
+  display: block;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
