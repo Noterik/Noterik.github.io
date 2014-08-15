@@ -65,7 +65,7 @@
 		$.getJSON(url,function(json){
         	$('#public_repos').html(json.public_repos);
         	$('#lines_of_code_current_week').html(json.lines_of_code_current_week);
-        	$('#lines_of_code_last_week').html(json.lines_of_code_last_week);
+        	$('#total_lines_of_code').html(json.total_lines_of_code);
 		});
 	};
 })();
