@@ -224,7 +224,8 @@ body .gallery,
 body .stat,
 body .feature,
 body .global-cat,
-body .partners {
+body .partners,
+body .demo {
   padding: 90px 0 90px 0;
 }
 body .cat {
@@ -404,6 +405,7 @@ body .global-cat .row .services .panel .panel-body .more a {
 }
 body .partners {
   text-align: center;
+  background: #f2f2f2;
 }
 body .partners .row h4 {
   font-size: 1.071em;
@@ -430,6 +432,55 @@ body .partners .row.logo [class*='col-'] img {
   max-width: 200px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+body .demo {
+  text-align: center;
+}
+body .demo .row .glyphicon {
+  font-size: 2em;
+  color: #bcbcbc;
+}
+body .demo .row h4 {
+  font-size: 1.071em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+body .demo .row p {
+  margin-top: 40px;
+  text-align: justify;
+  line-height: 2.5em;
+  font-weight: lighter;
+}
+body .demo .row .apps {
+  margin-top: 40px;
+}
+body .demo .row .apps .app {
+  margin-bottom: 30px;
+}
+body .demo .row .apps .app .head {
+  background: #333;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  padding: 12px 10px 10px 10px;
+  font-size: 0.929em;
+}
+body .demo .row .apps .app .content {
+  padding: 20px;
+  background: #f7f7f7;
+  text-align: left;
+  font-size: 0.929em;
+}
+body .demo .row .apps .app .navi {
+  background: #1f93c2;
+  color: #fff;
+  display: block;
+  padding: 5px 5px 4px 5px;
+  text-align: center;
+  font-size: 0.83em;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  margin-top: 20px;
 }
 body footer {
   padding: 26px 0 22px 0;
@@ -556,6 +607,9 @@ body .icono {
   }
   body .partners .row .logo [class*='col-'].marin-pads {
     padding-top: 37px;
+  }
+  body .demo .row .apps .app {
+    margin-bottom: 0px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
