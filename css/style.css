@@ -470,6 +470,7 @@ body .demo .row .apps .app .content {
   background: #f7f7f7;
   text-align: left;
   font-size: 0.929em;
+  font-weight: lighter;
 }
 body .demo .row .apps .app .navi {
   background: #1f93c2;
