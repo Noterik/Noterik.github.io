@@ -61,7 +61,7 @@
 	
 	// get github stat
 	var getGithubStats = function(){
-		var url="http://os.noterik.com/github_stats.json";
+		var url="//os.noterik.com/github_stats.json";
 		$.getJSON(url,function(json){
         	$('#public_repos').html(json.public_repos);
         	$('#lines_of_code_current_week').html(json.lines_of_code_current_week);
